@@ -37,3 +37,12 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.languages a:hover {
+    color: blue;
+}
+
+
+.nav-item .nav-link {
+    margin-right: 15px;
+}
