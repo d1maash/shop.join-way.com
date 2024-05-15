@@ -14,3 +14,4 @@ innerWidth = window.innerWidth;
 if (window.innerWidth < 1400) { sidenavInstance.changeMode("over"); sidenavInstance.hide();
   } else { sidenavInstance.changeMode("side"); sidenavInstance.show(); } }; setMode(); //
 window.addEventListener("resize", setMode);
+

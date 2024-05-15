@@ -61,6 +61,12 @@ section {
 :root {
     --index: calc(1vw + 1vh);
     --transition: cubic-bezier(.1, .7, 0, 1);
+    --hue: 223;
+    --bg: hsl(var(--hue), 10%, 90%);
+    --fg: hsl(var(--hue), 10%, 10%);
+    --primary: hsl(var(--hue), 90%, 55%);
+    --trans-dur: 0.3s;
+    font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
 }
 
 
@@ -242,4 +248,52 @@ section {
     text-align: center;
     font-size: 20px;
     color: #222;
+}
+
+
+.about-first-col p {
+    width: 70%;
+    font-size: 17px;
+}
+
+.about-col-img {
+    background-color: #000000;
+    padding-top: 15px;
+    border-radius: 200px 0 200px 200px;
+}
+
+.about-us-icons {
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.about-us-icons .about-icon {
+    justify-content: left;
+    align-items: flex-start;
+}
+
+
+.about-icon {
+    background-color: #6100FF;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+
+.about-icon:hover {
+    background-color: #FDF9F0;
+    color: #6100FF;
+}
+
+.about-us-icons .about-icon span {
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 10px;
+    justify-content: center;
+    font-weight: bold;
 }
