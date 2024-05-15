@@ -50,7 +50,7 @@ body {
 
 
 section {
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 
@@ -182,4 +182,46 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+.button_link {
+    background: rgb(97, 0, 255);
+    color: white;
+    padding: 12px;
+    transition: all 0.4s ease;
+    margin-left: 12px;
+    border-radius: 10px;
+}
+
+.button_link:hover {
+    background: white;
+    color: #6100FF;
+}
+
+.button_link i {
+    font-size: 24px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .main-section .main-text {
+        font-size: 32px;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .main-section .row {
+        flex-direction: column-reverse !important;
+    }
+
+    .main-section .main-text {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .main-section .d-flex {
+        justify-content: space-evenly;
+    }
 }
