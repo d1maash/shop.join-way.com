@@ -126,13 +126,14 @@
             </div>
         </section>
 
-        <section class="slider-sections">
-            <div class="container justify-content-center align-items-center text-xxl-center section-header">
-                <h2>Наша последняя коллекция</h2>
-                <p>Исследуйте последние тренды в уличной моде с нашей эксклюзивной коллекцией. Новые поступления,
-                    впечатляющий стиль и неповторимый характер – все это в нашем магазине streetwear</p>
+        <section class="slider-sections" data-aos="fade-up" data-aos-delay="500">
+            <div class="container section-header">
+                <h2 class="animation-2">Наша последняя коллекция</h2>
+                <p data-aos="fade-up" data-aos-delay="1000">Исследуйте последние тренды в уличной моде с нашей
+                    эксклюзивной коллекцией. Новые поступления,
+                    впечатляющий стиль и неповторимый характер – все это в нашем магазине Join-Way</p>
             </div>
-            <div class="wrapper1">
+            <div class="wrapper1" data-aos="fade-up" data-aos-delay="1500">
                 <div class="items1">
                     <div class="item1" tabindex="0"
                         style="background-image: url(src/img/home/Broken\ Planet\ \(@brokenplanet\)\ •\ Instagram\ photos\ and\ videos.jpeg)">
@@ -153,6 +154,20 @@
 
             </div>
         </section>
+        <section class="about-section" data-aos="fade-up" data-aos-delay="1000">
+            <div class="container section-header">
+                <h2 class="animation-3">Про нас</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Наш магазин — это объединение культуры улиц и высокой моды.
+                    Мы создаем и поддерживаем образы, которые
+                    не только отражают современные тренды, но и становятся частью городской истории и энергии.</p>
+                <div class="row">
+                    <div class="col-8"></div>
+                    <div class="col-4" data-aos="fade-left" data-aos-delay="100">
+                        <canvas id="cobe" style="width: 500px; height: 500px" width="1000" height="1000"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -163,7 +178,6 @@
 
 
 
-    <canvas id="cobe" style="width: 500px; height: 500px" width="1000" height="1000"></canvas>
 
     <script type="module">
         import createGlobe from 'https://cdn.skypack.dev/cobe'
@@ -209,6 +223,19 @@
     <script>
         new TxtAnime(".animation-1", {
             effect: 'txt-an-6',
+            overlayBackground: '#6100FF',
+            repeat: false
+        })
+        new TxtAnime(".animation-2", {
+            effect: 'txt-an-3',
+            delayStart: 0.5,
+            overlayBackground: '#6100FF',
+            repeat: false
+        })
+        new TxtAnime(".animation-3", {
+            effect: 'txt-an-3',
+            delayStart: 1,
+            delay: 0.4,
             overlayBackground: '#6100FF',
             repeat: false
         })

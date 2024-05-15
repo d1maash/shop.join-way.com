@@ -67,6 +67,7 @@ section {
 
 .wrapper1 {
     display: flex;
+
     align-items: center;
     justify-content: center;
     min-height: 50vh;
@@ -224,4 +225,21 @@ section {
     .main-section .d-flex {
         justify-content: space-evenly;
     }
+}
+
+.slider-sections {
+    margin-top: 150px;
+}
+
+.section-header h2 {
+    font-weight: bolder;
+    color: #6100FF;
+    text-align: center;
+}
+
+
+.section-header p {
+    text-align: center;
+    font-size: 20px;
+    color: #222;
 }
