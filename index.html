@@ -126,14 +126,14 @@
             </div>
         </section>
 
-        <section class="slider-sections" data-aos="fade-up" data-aos-delay="500">
+        <section class="slider-sections" data-aos="fade-up" data-aos-delay="100">
             <div class="container section-header">
                 <h2 class="animation-2">Наша последняя коллекция</h2>
                 <p data-aos="fade-up" data-aos-delay="1000">Исследуйте последние тренды в уличной моде с нашей
                     эксклюзивной коллекцией. Новые поступления,
                     впечатляющий стиль и неповторимый характер – все это в нашем магазине Join-Way</p>
             </div>
-            <div class="wrapper1" data-aos="fade-up" data-aos-delay="1500">
+            <div class="wrapper1" data-aos="fade-up" data-aos-delay="500">
                 <div class="items1">
                     <div class="item1" tabindex="0"
                         style="background-image: url(src/img/home/Broken\ Planet\ \(@brokenplanet\)\ •\ Instagram\ photos\ and\ videos.jpeg)">
@@ -154,7 +154,7 @@
 
             </div>
         </section>
-        <section class="about-section" data-aos="fade-up" data-aos-delay="1000">
+        <section class="about-section" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="section-header">
                     <h2 class="animation-3">Про нас</h2>
@@ -164,31 +164,31 @@
                         не только отражают современные тренды, но и становятся частью городской истории и энергии.</p>
                 </div>
                 <div class="row">
-                    <div class="col-8 about-first-col">
+                    <div class="col-md-8 about-first-col">
                         <div class="about-us-icons">
                             <br><br><br><br>
-                            <div data-aos="fade-up" data-aos-delay="1400" class="about-icon d-flex">
+                            <div data-aos="fade-up" data-aos-delay="600" class="about-icon d-flex">
                                 <i class="fa-duotone fa-crown"></i>
                                 <span> Уникальные образы, а не просто одежда</span>
                             </div>
                             <br>
-                            <div data-aos="fade-up" data-aos-delay="1300" class="about-icon d-flex">
+                            <div data-aos="fade-up" data-aos-delay="500" class="about-icon d-flex">
                                 <i class="fa-duotone fa-user-astronaut"></i>
                                 <span>Качество и надежность</span>
                             </div>
                             <br>
-                            <div data-aos="fade-up" data-aos-delay="1200" class="about-icon d-flex">
+                            <div data-aos="fade-up" data-aos-delay="400" class="about-icon d-flex">
                                 <i class="fa-solid fa-shirt-long-sleeve"></i>
                                 <span>Доступность и
                                     разнообразие</span>
                             </div>
                             <br>
-                            <div data-aos="fade-up" data-aos-delay="1100" class="about-icon d-flex">
+                            <div data-aos="fade-up" data-aos-delay="300" class="about-icon d-flex">
                                 <i class="fa-duotone fa-people-group"></i>
                                 <span>Сообщество стильных людей</span>
                             </div>
                             <br>
-                            <div data-aos="fade-up" data-aos-delay="1000" class="about-icon d-flex"><i
+                            <div data-aos="fade-up" data-aos-delay="200" class="about-icon d-flex"><i
                                     class="fa-duotone fa-truck"></i>
                                 <span>Доставка по всему КЗ</span>
                             </div>
@@ -204,8 +204,18 @@
 
                         </div>
                     </div>
-                    <div class="col-4" data-aos="fade-left" data-aos-delay="100">
-                        <canvas id="cobe" style="width: 500px; height: 500px" width="1000" height="1000"></canvas>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="globe-container">
+                            <div class="globe">
+                                <div class="globe-sphere"></div>
+                                <div class="globe-outer-shadow"></div>
+                                <div class="globe-worldmap">
+                                    <div class="globe-worldmap-back"></div>
+                                    <div class="globe-worldmap-front"></div>
+                                </div>
+                                <div class="globe-inner-shadow"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -222,45 +232,11 @@
 
 
 
-    <script type="module">
-        import createGlobe from 'https://cdn.skypack.dev/cobe'
-
-        let phi = 0
-        let canvas = document.getElementById("cobe")
-
-        const globe = createGlobe(canvas, {
-            devicePixelRatio: 2,
-            width: 1000,
-            height: 1000,
-            phi: 0,
-            theta: 0,
-            dark: 0,
-            diffuse: 1.2,
-            scale: 1,
-            mapSamples: 16000,
-            mapBrightness: 6,
-            baseColor: [1, 1, 1],
-            markerColor: [0, 0, 1],
-            glowColor: [0, 0, 0.55],
-            offset: [0, 0],
-            markers: [
-                { location: [47.081140, 51.934839], size: 0.2, }
-            ],
-            onRender: (state) => {
-                // Called on every animation frame.
-                // `state` will be an empty object, return updated params.
-                state.phi = phi
-                phi += 0.01
-            },
-        })
-    </script>
-
-
-
-
     <!-- main script -->
     <script src="src/js/main.js"></script>
 
+
+    <script src="//unpkg.com/three-globe" defer></script>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="vendor/TxtAnime.js-main/dist/TxtAnime.js"></script>
     <!-- or -->
