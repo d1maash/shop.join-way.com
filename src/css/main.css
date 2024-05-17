@@ -813,3 +813,8 @@ input.flight {
         transform: rotate(360deg);
     }
 }
+
+
+footer {
+    margin-top: 150px;
+}
