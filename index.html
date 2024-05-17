@@ -46,6 +46,11 @@
 </head>
 
 <body>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
     <style>
         /* Дополнительные стили для центрирования ссылок */
         @media (max-width: 768px) {
@@ -216,27 +221,31 @@
                 </div>
             </div>
         </section>
-        <section class="collections-section">
+        <section data-aos="fade-up" data-aos-delay="300" class="container collections-section">
             <div class="section-header">
-                <h2>
+                <h2 class="animation-4">
                     Наши коллекций
                 </h2>
-                <p>
-                    sdf
+                <p data-aos="fade-up" data-aos-delay="400">
+                    Каждая наша коллекция — это не просто одежда, а стиль жизни. Мы стремимся создавать вещи, которые
+                    станут неотъемлемой частью вашей повседневной жизни и позволят вам чувствовать себя уверенно и
+                    стильно.
                 </p>
             </div>
 
-            <div class="container collection-card">
+            <div class="container collection-card" data-aos="fade-up" data-aos-delay="500">
                 <div class="box">
                     <div class="imgBx">
                         <img src="src/img/home/ad3c9884-6dac-4fea-916f-4e754cbf9f24.jpeg">
                     </div>
                     <div class="content">
                         <div>
-                            <h2>Image Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias
-                                quidem iusto.
-                            </p>
+                            <a href="#">
+                                <h2>Collection #1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias
+                                    quidem iusto.
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -303,6 +312,13 @@
             effect: 'txt-an-3',
             delayStart: 1,
             delay: 0.4,
+            overlayBackground: '#6100FF',
+            repeat: false
+        })
+        new TxtAnime(".animation-4", {
+            effect: 'txt-an-3',
+            delayStart: 1,
+            delay: 0.6,
             overlayBackground: '#6100FF',
             repeat: false
         })
