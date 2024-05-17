@@ -41,8 +41,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="src/css/main.css">
-    <title>Join-Way Shop</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/about.css">
+    <title>О нас</title>
 </head>
 
 <body>
@@ -79,10 +80,10 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="active nav-link" href="index.html">Главная</a>
+                            <a class="nav-link" href="index.html">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">О нас</a>
+                            <a class="nav-link active" href="about.html">О нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Коллекций</a>
@@ -103,66 +104,36 @@
     </header>
 
     <main>
-        <section class="container main-section">
-            <div class="row">
-                <div class="col">
-                    <h1 class="main-text animation-1">
-                        Это не просто магазин, это
-                        платформа для самовыражения и самореализации.
-                    </h1>
-                    <div class="social-links d-flex">
-                        <a href="#" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="1300"
-                            class="d-flex align-items-center justify-content-center button_link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="1450"
-                            class="d-flex align-items-center justify-content-center button_link">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="#" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="1600"
-                            class="d-flex align-items-center justify-content-center button_link">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-                <div data-aos="fade-left" data-aos-easing="linear" data-aos-delay="1150" class="main-img-con col">
-                    <img class="main-img" src="src/img/logo2.png" alt="">
-                </div>
+        <!-- Main Section -->
+        <section class="main-section">
+            <div class="overlay"></div>
+            <div class="container text-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="#" class="activated">О нас</a></li>
+                    </ol>
+                </nav>
             </div>
         </section>
-
-        <section class="slider-sections" data-aos="fade-up" data-aos-delay="100">
-            <div class="container section-header">
-                <h2 class="animation-2">Наша последняя коллекция</h2>
-                <p data-aos="fade-up" data-aos-delay="1000">Исследуйте последние тренды в уличной моде с нашей
-                    эксклюзивной коллекцией. Новые поступления,
-                    впечатляющий стиль и неповторимый характер – все это в нашем магазине Join-Way</p>
-            </div>
-            <div class="wrapper1" data-aos="fade-up" data-aos-delay="500">
-                <div class="items1">
-                    <div class="item1" tabindex="0"
-                        style="background-image: url(src/img/home/Broken\ Planet\ \(@brokenplanet\)\ •\ Instagram\ photos\ and\ videos.jpeg)">
-                    </div>
-                    <div class="item1" tabindex="0" style="background-image: url(src/img/home/first-img.jpeg)"></div>
-                    <div class="item1" tabindex="0"
-                        style="background-image: url(src/img/home/Streetwear\ Design\ &\ Mock\ Up.jpeg)"></div>
-                    <div class="item1" tabindex="0"
-                        style="background-image: url(https://source.unsplash.com/_5AJGBygMqc/900x1200)"></div>
-                    <div class="item1" tabindex="0"
-                        style="background-image: url(https://source.unsplash.com/ljsJAxN5R80/900x1200)"></div>
-                    <div class="item1" tabindex="0"
-                        style="background-image: url(https://source.unsplash.com/ljsJAxN5R80/900x1200)"></div>
-                    <div class="item1" tabindex="0"
-                        style="background-image: url(https://source.unsplash.com/ljsJAxN5R80/900x1200)"></div>
-
+        <section class="us-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>
+                        Кто мы такие?
+                    </h2>
+                    <p>
+                        Мы — join-way.shop, команда энтузиастов и профессионалов, вдохновленных динамикой и
+                        культурой уличной моды. Наш магазин — это не просто место, где можно купить одежду, это
+                        пространство для самовыражения, творчества и стиля.
+                    </p>
                 </div>
-
             </div>
         </section>
         <section class="about-section" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="animation-3">О нас</h2>
+                    <h2 class="animation-3">Про нас</h2>
                     <p data-aos="fade-up" data-aos-delay="100">Наш магазин — это объединение культуры улиц и высокой
                         моды.
                         Мы создаем и поддерживаем образы, которые
@@ -221,62 +192,7 @@
                 </div>
             </div>
         </section>
-        <section data-aos="fade-up" data-aos-delay="300" class="container collections-section">
-            <div class="section-header">
-                <h2 class="animation-4">
-                    Наши коллекций
-                </h2>
-                <p data-aos="fade-up" data-aos-delay="400">
-                    Каждая наша коллекция — это не просто одежда, а стиль жизни. Мы стремимся создавать вещи, которые
-                    станут неотъемлемой частью вашей повседневной жизни и позволят вам чувствовать себя уверенно и
-                    стильно.
-                </p>
-            </div>
 
-            <div class="container collection-card" data-aos="fade-up" data-aos-delay="500">
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="src/img/home/ad3c9884-6dac-4fea-916f-4e754cbf9f24.jpeg">
-                    </div>
-                    <div class="content">
-                        <div>
-                            <a href="#">
-                                <h2>Collection #1</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias
-                                    quidem iusto.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="src/img/home/ad3c9884-6dac-4fea-916f-4e754cbf9f24.jpeg"">
-                    </div>
-                    <div class=" content">
-                        <div>
-                            <h2>Image Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias
-                                quidem iusto.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="src/img/home/ad3c9884-6dac-4fea-916f-4e754cbf9f24.jpeg">
-                    </div>
-                    <div class="content">
-                        <div>
-                            <h2>Image Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias
-                                quidem iusto.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="bg-dark text-white pt-4 mt-10">
@@ -292,7 +208,7 @@
                     <h5>Навигация</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-white">Главная</a></li>
-                        <li><a href="about.html" class="text-white">О нас</a></li>
+                        <li><a href="#" class="text-white">О нас</a></li>
                         <li><a href="#" class="text-white">Услуги</a></li>
                         <li><a href="#" class="text-white">Контакты</a></li>
                     </ul>
