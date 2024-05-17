@@ -1,17 +1,19 @@
-const sidenav = document.getElementById("sidenav-1");
-const sidenavInstance = mdb.Sidenav.getInstance(sidenav);
+//basado en la Rotating Image Gallery de @masterneme https://codepen.io/masterneme/pen/bGzeOKX
 
-let innerWidth = null;
+const imageContainerEl = document.querySelector(".image-container");
+const prevEl = document.getElementById("prev");
+const nextEl = document.getElementById("next");
 
-const setMode = (e) => {
-// Check necessary for Android devices
-if (window.innerWidth === innerWidth) {
-return;
+let x = 0;
+let timer;
+
+
+function updateGallery() {
+    imageContainerEl.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+    timer = setTimeout( () => {
+        x -= 90;
+        updateGallery();
+    }, 2000)
 }
 
-innerWidth = window.innerWidth;
-
-if (window.innerWidth < 1400) { sidenavInstance.changeMode("over"); sidenavInstance.hide();
-  } else { sidenavInstance.changeMode("side"); sidenavInstance.show(); } }; setMode(); //
-window.addEventListener("resize", setMode);
-
+updateGallery();

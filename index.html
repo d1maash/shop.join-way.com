@@ -164,7 +164,7 @@
                         не только отражают современные тренды, но и становятся частью городской истории и энергии.</p>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 about-first-col">
+                    <div class="col-9 about-first-col">
                         <div class="about-us-icons">
                             <br><br><br><br>
                             <div data-aos="fade-up" data-aos-delay="600" class="about-icon d-flex">
@@ -204,20 +204,30 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="globe-container">
-                            <div class="globe">
-                                <div class="globe-sphere"></div>
-                                <div class="globe-outer-shadow"></div>
-                                <div class="globe-worldmap">
-                                    <div class="globe-worldmap-back"></div>
-                                    <div class="globe-worldmap-front"></div>
-                                </div>
-                                <div class="globe-inner-shadow"></div>
-                            </div>
+                    <div class="col-3">
+                        <div class="image-container">
+                            <span style="--i: 1">
+                                <img
+                                    src="https://images.unsplash.com/photo-1556316384-12c35d30afa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQ5NTU0ODN8&ixlib=rb-4.0.3&q=85">
+                            </span>
+                            <span style="--i: 2">
+                                <img
+                                    src="https://images.unsplash.com/photo-1552168324-d612d77725e3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQ5NTU1ODB8&ixlib=rb-4.0.3&q=85">
+                            </span>
+                            <span style="--i: 3">
+                                <img
+                                    src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQ5NTU3MTJ8&ixlib=rb-4.0.3&q=85">
+                            </span>
+                            <span style="--i: 4">
+                                <img
+                                    src="https://images.unsplash.com/photo-1571450669798-fcb4c543f6a4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQ5NTU4Njl8&ixlib=rb-4.0.3&q=85">
+                            </span>
                         </div>
+
+
                     </div>
                 </div>
+            </div>
 
             </div>
         </section>
@@ -229,13 +239,17 @@
 
 
 
-
-
-
+    <script src="vendor/anime/lib/anime.js"></script>
+    <script src="vendor/anime/lib/anime.min.js"></script>
     <!-- main script -->
     <script src="src/js/main.js"></script>
 
-
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-LLWL5N9CSM');
+    </script>
     <script src="//unpkg.com/three-globe" defer></script>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="vendor/TxtAnime.js-main/dist/TxtAnime.js"></script>
@@ -279,6 +293,93 @@
     <!-- MAIN SCRIPT FILE  -->
     <script>
         AOS.init();
+    </script>
+    <script>
+        function fitElementToParent(el, padding) {
+            var timeout = null;
+            function resize() {
+                if (timeout) clearTimeout(timeout);
+                anime.set(el, { scale: 1 });
+                var pad = padding || 0;
+                var parentEl = el.parentNode;
+                var elOffsetWidth = el.offsetWidth - pad;
+                var parentOffsetWidth = parentEl.offsetWidth;
+                var ratio = parentOffsetWidth / elOffsetWidth;
+                timeout = setTimeout(anime.set(el, { scale: ratio }), 10);
+            }
+            resize();
+            window.addEventListener('resize', resize);
+        }
+
+        var sphereAnimation = (function () {
+
+            var sphereEl = document.querySelector('.sphere-animation');
+            var spherePathEls = sphereEl.querySelectorAll('.sphere path');
+            var pathLength = spherePathEls.length;
+            var hasStarted = false;
+            var aimations = [];
+
+            fitElementToParent(sphereEl);
+
+            var breathAnimation = anime({
+                begin: function () {
+                    for (var i = 0; i < pathLength; i++) {
+                        aimations.push(anime({
+                            targets: spherePathEls[i],
+                            stroke: { value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], duration: 500 },
+                            translateX: [2, -4],
+                            translateY: [2, -4],
+                            easing: 'easeOutQuad',
+                            autoplay: false
+                        }));
+                    }
+                },
+                update: function (ins) {
+                    aimations.forEach(function (animation, i) {
+                        var percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
+                        animation.seek(animation.duration * percent);
+                    });
+                },
+                duration: Infinity,
+                autoplay: false
+            });
+
+            var introAnimation = anime.timeline({
+                autoplay: false
+            })
+                .add({
+                    targets: spherePathEls,
+                    strokeDashoffset: {
+                        value: [anime.setDashoffset, 0],
+                        duration: 3900,
+                        easing: 'easeInOutCirc',
+                        delay: anime.stagger(190, { direction: 'reverse' })
+                    },
+                    duration: 2000,
+                    delay: anime.stagger(60, { direction: 'reverse' }),
+                    easing: 'linear'
+                }, 0);
+
+            var shadowAnimation = anime({
+                targets: '#sphereGradient',
+                x1: '25%',
+                x2: '25%',
+                y1: '0%',
+                y2: '75%',
+                duration: 30000,
+                easing: 'easeOutQuint',
+                autoplay: false
+            }, 0);
+
+            function init() {
+                introAnimation.play();
+                breathAnimation.play();
+                shadowAnimation.play();
+            }
+
+            init();
+
+        })();
     </script>
     <script>
         try {
