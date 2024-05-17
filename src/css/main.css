@@ -595,15 +595,75 @@ input.flight {
 
 
 @media screen and (max-width: 767px) {
-    .about-columns {
-        flex-direction: column;
-    }
 
     .about-icon {
-        width: 650px;
+        width: 500px;
     }
 
     .flight-component {
-        padding: 0 150px;
+        padding: 0 70px;
+    }
+}
+
+
+@media screen and (max-width: 525px) {
+
+    .about-icon {
+        width: 450px;
+    }
+
+    .flight-component {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    .about-icon {
+        width: 400px;
+    }
+
+    .flight-component {
+        padding: 0 50px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .about-icon {
+        width: 350px;
+    }
+
+    .flight-component {
+        padding: 0 50px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .about-icon {
+        width: 300px;
+    }
+
+    .flight-component {
+        padding: 0 25px;
+    }
+
+    .flight-component {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .about-icon {
+        width: 260px;
+    }
+
+    .flight-component {
+        padding: 0 15px;
     }
 }
