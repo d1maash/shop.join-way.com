@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-
     <link rel="shortcut icon" href="src/img/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="src/fonts/Candara/candara.ttf">
     <!-- Google Fonts -->
@@ -42,17 +40,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/about.css">
-    <link rel="stylesheet" href="src/css/about.scss">
     <title>О нас</title>
 </head>
 
 <body>
-    <script src="https://use.typekit.net/bkt6ydm.js"></script>
-    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
     <div id="preloader">
         <div class="spinner"></div>
     </div>
@@ -70,6 +63,11 @@
                 display: inline-block;
             }
         }
+
+        .card {
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
     </style>
 
     <header>
@@ -85,10 +83,10 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Главная</a>
+                            <a class="active nav-link" href="index.html">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">О нас</a>
+                            <a class="nav-link" href="about.html">О нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Коллекций</a>
@@ -108,6 +106,7 @@
         </nav>
     </header>
 
+
     <main>
         <!-- Main Section -->
         <section class="main-section">
@@ -124,7 +123,7 @@
         <section class="us-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>
+                    <h2 class="animation-2">
                         Кто мы такие?
                     </h2>
                     <p>
@@ -133,76 +132,220 @@
                         пространство для самовыражения, творчества и стиля.
                     </p>
                 </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
 
+                                    <i class="fa-duotone fa-truck iconn"></i>
+                                    <h5 class="card-title">Доставим в любую точку мира</h5>
+                                    <p class="card-text">Описание товара 1 здесь.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="product2.jpg" class="card-img-top" alt="Product 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название товара 2</h5>
+                                    <p class="card-text">Описание товара 2 здесь.</p>
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="product3.jpg" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название товара 3</h5>
+                                    <p class="card-text">Описание товара 3 здесь.</p>
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="product3.jpg" class="card-img-top" alt="Product 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Название товара 3</h5>
+                                    <p class="card-text">Описание товара 3 здесь.</p>
+                                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="out-history">
+        <div class="our-history">
             <div class="container">
                 <div class="section-header">
                     <h2>
-                        sdf
+                        История магазина
                     </h2>
                     <p>
-                        sdfsdf
+                        Наш магазин начал свой путь как идея предложить уличную моду, которая не только выделяется
+                        стилем, но и подчеркивает индивидуальность каждого нашего клиента. Мы стремились стать местом,
+                        где каждый найдет нечто особенное, что отражает его личность и вкусы.
                     </p>
                 </div>
-                <div class="row example-centered">
+                <div class="page" data-uia-timeline-skin="4" data-uia-timeline-adapter-skin-4="uia-card-skin-#1">
+                    <div class="uia-timeline">
+                        <div class="uia-timeline__container">
+                            <div class="uia-timeline__line"></div>
+                            <div class="uia-timeline__annual-sections">
+                                <span class="uia-timeline__year" aria-hidden="true">2023</span>
+                                <div class="uia-timeline__groups">
+                                    <section class="uia-timeline__group" aria-labelledby="timeline-demo-4-heading-1">
+                                        <div class="uia-timeline__point uia-card" data-uia-card-skin="1"
+                                            data-uia-card-mod="1">
+                                            <div class="uia-card__container">
+                                                <div class="uia-card__intro">
+                                                    <h3 id="timeline-demo-4-heading-1" class="ra-heading">Старт нашего
+                                                        магазина под ником eJerseys.kz </h3>
+                                                    <span class="uia-card__time">
+                                                        <time datetime="2008-02-02">
+                                                            <span rclass="uia-card__day">12</span>
+                                                            <span>Октябрь<span class="ha-screen-reader">
+                                                                    2023</span></span>
+                                                        </time>
+                                                    </span>
+                                                </div>
+                                                <div class="uia-card__body">
+                                                    <div class="uia-card__description">
+                                                        <p>Добро пожаловать на eJerseys.kz – ваш источник стиля и
+                                                            качества в мире спортивной одежды!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="uia-timeline__group" aria-labelledby="timeline-demo-4-heading-2">
+                                        <div class="uia-timeline__point uia-card" data-uia-card-skin="1"
+                                            data-uia-card-mod="1">
+                                            <div class="uia-card__container">
+                                                <div class="uia-card__intro">
+                                                    <h3 id="timeline-demo-4-heading-2" class="ra-heading">Количество
+                                                        заказов на нашем магазине достигло 100!
+                                                    </h3>
+                                                    <span class="uia-card__time">
+                                                        <time datetime="2023-10-19">
+                                                            <span class="uia-card__day">18</span>
+                                                            <span>Октябрь<span class="ha-screen-reader">
 
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                        <ul class="timeline timeline-centered">
-                            <li class="timeline-item period">
-                                <div class="timeline-info"></div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h2 class="timeline-title">Сентябрь 2023</h2>
-                                </div>
-                            </li>
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>12 сентября 2023 года</span>
-                                </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">Старт нашего магазина под ником eJerseys.kz</h3>
-                                    <p>Добро пожаловать на eJerseys.kz – ваш источник стиля и качества в мире стильный
-                                        одежды!</p>
-                                </div>
-                            </li>
+                                                                    2023</span></span></time>
+                                                    </span>
+                                                </div>
+                                                <div class="uia-card__body">
+                                                    <div class="uia-card__description">
+                                                        <p>Благодарим каждого нашего клиента за доверие и поддержку.
+                                                            Ваше
+                                                            участие делает нас сильнее, и мы стремимся делать ваше
+                                                            онлайн-шоппинговое впечатление еще более удивительным и
+                                                            удобным. Присоединяйтесь к нам и продолжайте наслаждаться
+                                                            качественной спортивной одеждой и аксессуарами от
+                                                            eJerseys.kz!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="uia-timeline__group" aria-labelledby="timeline-demo-4-heading-2">
+                                        <div class="uia-timeline__point uia-card" data-uia-card-skin="1"
+                                            data-uia-card-mod="1">
+                                            <div class="uia-card__container">
+                                                <div class="uia-card__intro">
+                                                    <h3 id="timeline-demo-4-heading-2" class="ra-heading">Остановка
+                                                        магазина из за технических проблем
+                                                    </h3>
+                                                    <span class="uia-card__time">
+                                                        <time datetime="2023-10-19">
+                                                            <span class="uia-card__day">22</span>
+                                                            <span>Декабрь<span class="ha-screen-reader">
 
-                            <li class="timeline-item period">
-                                <div class="timeline-info"></div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h2 class="timeline-title">Октябрь 2023</h2>
+                                                                    2023</span></span></time>
+                                                    </span>
+                                                </div>
+                                                <div class="uia-card__body">
+                                                    <div class="uia-card__description">
+                                                        <p>С сожалением сообщаем, что наш магазин временно приостановлен
+                                                            из-за технических проблем.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="uia-timeline__group" aria-labelledby="timeline-demo-4-heading-2">
+                                        <div class="uia-timeline__point uia-card" data-uia-card-skin="1"
+                                            data-uia-card-mod="1">
+                                            <div class="uia-card__container">
+                                                <div class="uia-card__intro">
+                                                    <h3 id="timeline-demo-4-heading-2" class="ra-heading">Временная
+                                                        заморозка магазина
+
+                                                    </h3>
+                                                    <span class="uia-card__time">
+                                                        <time datetime="2023-10-19">
+                                                            <span class="uia-card__day">29</span>
+                                                            <span>Декабрь<span class="ha-screen-reader">
+
+                                                                    2023</span></span></time>
+                                                    </span>
+                                                </div>
+                                                <div class="uia-card__body">
+                                                    <div class="uia-card__description">
+                                                        <p>Уважаемые клиенты, с сожалением сообщаем, что наш магазин
+                                                            временно заморожен на несколько месяцев из-за технических
+                                                            проблем. Это решение было неожиданным для нас, и мы приносим
+                                                            извинения за любые неудобства, которые это может вызвать.
+                                                            Следите за нашими
+                                                            обновлениями для получения последней информации о
+                                                            восстановлении работы магазина. Благодарим за ваше терпение
+                                                            и снова приносим извинения за причиненные неудобства.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
-                            </li>
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>Октябрь 19, 2023</span>
+                            </div>
+                            <div class="uia-timeline__annual-sections">
+                                <span class="uia-timeline__year" aria-hidden="true">2024</span>
+                                <div class="uia-timeline__groups">
+                                    <section class="uia-timeline__group" aria-labelledby="timeline-demo-4-heading-3">
+                                        <div class="uia-timeline__point uia-card" data-uia-card-skin="1"
+                                            data-uia-card-mod="1">
+                                            <div class="uia-card__container">
+                                                <div class="uia-card__intro">
+                                                    <h3 id="timeline-demo-4-heading-3" class="ra-heading">Переименование
+                                                        магазина и обновление штатного состава
+                                                    </h3>
+                                                    <span class="uia-card__time">
+                                                        <time datetime="2014-07-14">
+                                                            <span class="uia-card__day">25</span>
+                                                            <span>Май <span class="ha-screen-reader">2024</span></span>
+                                                        </time>
+                                                    </span>
+                                                </div>
+                                                <div class="uia-card__body">
+                                                    <div class="uia-card__description">
+                                                        <p>Мы рады сообщить вам об эксклюзивных изменениях в нашем
+                                                            магазине! Переименование магазина — это лишь первый шаг к
+                                                            нашему стремлению к совершенству. Теперь наш магазин будет
+                                                            называться join-way.shop, символизируя нашу постоянную
+                                                            эволюцию и усовершенствование.
+                                                            Кроме того, мы с гордостью представляем вам обновленный штат
+                                                            сотрудников.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">Количество заказов на нашем сайте достигло 100! </h3>
-                                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
-                                        posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id,
-                                        nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                        eu pede mollis pretium. Pellentesque ut neque. </p>
-                                </div>
-                            </li>
-                            <li class="timeline-item">
-                                <div class="timeline-info">
-                                    <span>April 28, 2016</span>
-                                </div>
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h3 class="timeline-title">Event Title</h3>
-                                    <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget,
-                                        posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id,
-                                        nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                        eu pede mollis pretium. Pellentesque ut neque. </p>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

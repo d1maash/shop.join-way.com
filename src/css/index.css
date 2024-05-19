@@ -94,3 +94,17 @@ section {
 footer {
     margin-top: 150px;
 }
+
+
+.section-header h2 {
+    font-weight: bolder;
+    color: #6100FF;
+    text-align: center;
+}
+
+
+.section-header p {
+    text-align: center;
+    font-size: 20px;
+    color: #222;
+}
