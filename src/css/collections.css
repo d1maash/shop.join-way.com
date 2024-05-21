@@ -1,0 +1,97 @@
+.main-section {
+    position: relative;
+    background: url('../img/about/@theunbrandedclub.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    /* Высота секции на полный экран */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачная черная заливка */
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.breadcrumb .breadcrumb-item a {
+    font-size: 20px;
+    color: white;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+    opacity: 0.8;
+}
+
+.activated {
+    opacity: 0.5;
+}
+
+
+
+.collection {
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease;
+}
+
+.collection h2 {
+    margin-top: 0;
+    color: #6100FF;
+    animation: fadeInLeft 1s ease;
+}
+
+.collection-items .item {
+    width: 45%;
+    margin-bottom: 20px;
+    animation: fadeInRight 1s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-us {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+.delivery-info {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+.advantages {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
