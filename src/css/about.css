@@ -1084,12 +1084,12 @@ p:last-child {
 
 
 .card-category:hover>.card-body i {
-    color: #6100FF;
+    color: black;
 }
 
 .card-category i {
     font-size: 30px;
-    color: black;
+    color: #6100FF;
     margin-bottom: 15px;
 }
 
