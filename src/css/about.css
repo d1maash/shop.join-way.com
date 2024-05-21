@@ -1054,7 +1054,7 @@ p:last-child {
 }
 
 .card-body {
-    padding: 25px !important;
+    padding: 15px !important;
 }
 
 .card {
@@ -1085,6 +1085,10 @@ p:last-child {
 
 .card-category:hover>.card-body i {
     color: black;
+}
+
+.card-category:hover>.card-body .card-title {
+    color: #6100FF;
 }
 
 .card-category i {
