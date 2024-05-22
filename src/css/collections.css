@@ -99,9 +99,26 @@
 
 .choose-cards i {
     font-size: 34px;
+    color: #6100FF;
+    margin-bottom: 20px;
 }
 
 .choose-cards {
     background-color: white;
     padding: 60px 20px;
+    transition: all 0.2s ease-in;
+}
+
+
+.choose-cards:hover i {
+    color: black;
+}
+
+.choose-cards:hover h3 {
+    color: #6100FF;
+}
+
+.choose-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
