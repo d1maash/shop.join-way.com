@@ -151,3 +151,17 @@
     height: 100%;
     opacity: 0;
 }
+
+.buy-button {
+    border: 1px solid #6100FF;
+    padding: 5px 10px;
+    /* Optional: add some padding for better look */
+    margin-top: 10px;
+    /* Optional: add some margin to separate from the price text */
+}
+
+.buy-button .ms-2 {
+    font-weight: bold;
+    margin: 0;
+    /* Removes default margin for span */
+}
