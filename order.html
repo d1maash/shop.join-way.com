@@ -41,8 +41,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="src/css/index.css">
-    <link rel="stylesheet" href="src/css/collections.css">
-    <title>Коллекций</title>
+    <link rel="stylesheet" href="src/css/order.css">
+    <title>Заказать</title>
 </head>
 
 <body>
@@ -89,10 +89,10 @@
                             <a class="nav-link" href="about.html">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="active nav-link" href="collections.html">Коллекций</a>
+                            <a class="nav-link" href="collections.html">Коллекций</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Заказать</a>
+                            <a class="active nav-link" href="order.html">Заказать</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Контакты</a>
@@ -115,107 +115,139 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                        <li class="breadcrumb-item" aria-current="page"><a href="#" class="activated">Коллекций</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="#" class="activated">Заказать</a></li>
                     </ol>
                 </nav>
             </div>
         </section>
-        <div class="container">
-            <section class="text-center mb-5 section-header" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="animation-2">Стильная и комфортная уличная одежда</h2>
-                <div class="row justify-content-center align-items-center mt-4">
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <video class="w-100" controls autoplay loop>
-                            <source src="src/video/first.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <p>Мы предлагаем лучшие коллекции уличной одежды для молодежи.</p>
-
-                        <h4 style="color: #6100FF; font-weight: bold;">
-                            DO IT ANYWAY
-                        </h4>
-                    </div>
-                </div>
-            </section>
-
-            </section>
-
-
-            <!-- Why Choose Us Section -->
-            <section class="advantages text-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="section-header">
-
-                    <h2 class="animation-3">Почему мы?</h2>
-                </div>
+        <section class="order">
+            <div class="section-header">
+                <h2>Условия доставки
+                </h2>
+                <p>В нашем магазине одежды мы предлагаем удобные и безопасные условия оплаты и доставки</p>
+            </div>
+            <div class="container mt-5">
                 <div class="row">
-                    <div class="col-md-4 mb-4 choose-cards" data-aos="fade-up" data-aos-delay="400">
-                        <i class="fa-duotone fa-trophy-star"></i>
-                        <h3>Высокое качество</h3>
-                        <p>Только качественная одежда от лучших производителей.</p>
-                    </div>
-                    <div class="col-md-4 mb-4 choose-cards" data-aos="fade-up" data-aos-delay="600">
-                        <i class="fa-duotone fa-truck-bolt"></i>
-                        <h3>Быстрая доставка</h3>
-                        <p>Оперативная доставка по всей стране и за её пределами.</p>
-                    </div>
-                    <div class="col-md-4 mb-4 choose-cards" data-aos="fade-up" data-aos-delay="800">
-                        <i class="fa-duotone fa-headset"></i>
-                        <h3>Круглосуточная поддержка</h3>
-                        <p>Мы всегда готовы помочь вам с любыми вопросами.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Collections Section -->
-            <section class="collection" data-aos="fade-up" data-aos-delay="200">
-                <div class="section-header">
-                    <h2>Наши коллекции</h2>
-
-                </div>
-                <div class="container mt-5">
-                    <div class="row">
-                        <!-- First Card -->
-                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                            <a href="collection1.html" target="_blank">
-                                <div class="card">
-                                    <div class="img-container">
-                                        <img src="https://via.placeholder.com/350x150" class="card-img-top"
-                                            alt="Image 1">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Collection #1</h5>
-                                        <p class="card-text">Добро пожаловать в Collection #1. Эта коллекция воплощает
-                                            дух свободы и самовыражения, где
-                                            стиль и комфорт сочетаются с уникальностью и индивидуальностью.
-
-                                        </p>
-                                    </div>
+                    <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card card-category text-center flex-fill">
+                            <div class="card-body d-flex flex-column">
+                                <div><i class="fa-duotone fa-credit-card"></i>
+                                    <h5 class="card-title">Предварительная оплата 50%</h5>
+                                    <p class="card-text">При оформлении заказа вы оплачиваете 50% стоимости выбранного
+                                        товара. Это позволяет вам застраховать себя, оплачивая лишь половину суммы на
+                                        начальном этапе.</p>
                                 </div>
-                            </a>
-                        </div>
-                        <!-- Second Card -->
-                        <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700">
-                            <a href="https://example.com" target="_blank">
-                                <div class="card">
-                                    <div class="img-container">
-                                        <img src="https://via.placeholder.com/350x150" class="card-img-top"
-                                            alt="Image 2">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title"> Collection #2 <span
-                                                style="color: #6100FF; font-weight: bold;">SOON</span></h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </a>
+
+                            </div>
                         </div>
                     </div>
+                    <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card card-category text-center flex-fill">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <i class="fa-duotone fa-hourglass-clock"></i>
+                                    <h5 class="card-title">Ожидание прибытия товара</h5>
+                                    <p class="card-text">После получения вашего предварительного платежа мы заказываем
+                                        товар у наших поставщиков. Когда товар прибывает к нам на склад и готов к
+                                        отправке, мы уведомим вас об этом.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card card-category text-center flex-fill">
+                            <div class="card-body d-flex flex-column">
+                                <div>
+                                    <i class="fa-duotone fa-money-bill-wave"></i>
+                                    <h5 class="card-title">Оплата оставшейся суммы и доставки</h5>
+                                    <p class="card-text">Когда товар готов к отправке, вам необходимо оплатить
+                                        оставшиеся 50% стоимости товара, а также стоимость доставки. Стоимость доставки
+                                        по почте составляет 1500 тенге.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="faq-section container">
+            <div class="section-header">
+                <h2 style="margin-bottom: 20px;">
+                    FAQ
+                </h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin
+                            adds the appropriate classes that we use to style each element. These classes control the
+                            overall
+                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                            this with custom
+                            CSS or overriding our default variables. It's also worth noting that just about any HTML can
+                            go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse
+                            plugin adds the appropriate classes that we use to style each element. These classes control
+                            the overall
+                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                            this with custom
+                            CSS or overriding our default variables. It's also worth noting that just about any HTML can
+                            go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin
+                            adds the appropriate classes that we use to style each element. These classes control the
+                            overall
+                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                            this with custom
+                            CSS or overriding our default variables. It's also worth noting that just about any HTML can
+                            go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-dark text-white pt-4 mt-10">
