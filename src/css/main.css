@@ -13,7 +13,7 @@ a {
 
 body {
     font-size: 14px;
-    background-color: #FDF9F0;
+    background-color: #f0f0f0;
     font-family: "Candara" sans-serif;
 
     height: 1000px;
@@ -788,7 +788,7 @@ input.flight {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #FDF9F0;
+    background: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -796,7 +796,7 @@ input.flight {
 }
 
 .spinner {
-    border: 8px solid #f3f3f3;
+    border: 8px solid rgb(0, 0, 0);
     border-radius: 50%;
     border-top: 8px solid #6100FF;
     width: 60px;

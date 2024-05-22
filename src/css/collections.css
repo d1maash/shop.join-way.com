@@ -44,54 +44,64 @@
     opacity: 0.5;
 }
 
-
-
+.about-us,
+.delivery-info,
+.advantages,
 .collection {
+    padding: 40px;
     margin-bottom: 40px;
-    animation: fadeInUp 1s ease;
 }
 
-.collection h2 {
-    margin-top: 0;
+.advantages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.advantages ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.advantages ul li:before {
+    content: "\2713";
     color: #6100FF;
-    animation: fadeInLeft 1s ease;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }
 
-.collection-items .item {
-    width: 45%;
-    margin-bottom: 20px;
-    animation: fadeInRight 1s ease;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.choose-cards {
+    margin-top: 50px;
 }
 
-.item img {
-    width: 100%;
+
+
+.card {
+    overflow: hidden;
 }
 
-.item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+.img-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-us {
-    background-color: #fff;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease;
+.img-container img {
+    transition: transform 0.3s ease;
 }
 
-.delivery-info {
-    background-color: #fff;
-    padding: 40px;
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease;
+.card:hover .img-container img {
+    transform: scale(1.1);
 }
 
-.advantages {
-    background-color: #fff;
-    padding: 40px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease;
+
+.choose-cards i {
+    font-size: 34px;
+}
+
+.choose-cards {
+    background-color: white;
+    padding: 60px 20px;
 }
