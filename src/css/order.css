@@ -56,3 +56,46 @@
     font-size: 14px;
     margin-bottom: 15px;
 }
+
+
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    /* You can choose your desired background color */
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #6100FF;
+    border: 1px solid #6100FF;
+    /* Text color */
+    width: fit-content;
+}
+
+.contact-button:hover {
+    background-color: #6100FF;
+    /* Background color on hover */
+    color: white;
+    /* Text color on hover */
+}
+
+.contact-button i {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact-text {
+    margin: 0;
+}
